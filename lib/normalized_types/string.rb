@@ -6,7 +6,7 @@ module NormalizedTypes
   class String < ActiveModel::Type::String
     attr_reader :strip, :presence, :squish, :truncate, :downcase
 
-    def initialize(strip: true, presence: true, squish: false, truncate: 10_000, downcase: false)
+    def initialize(strip: true, presence: true, squish: false, truncate: nil, downcase: false)
       @strip = strip
       @presence = presence
       @squish = squish
