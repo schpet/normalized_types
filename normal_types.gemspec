@@ -1,17 +1,17 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "normal_types/version"
+require "normalized_types/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "normal_types"
-  spec.version       = NormalTypes::VERSION
+  spec.name          = "normalized_types"
+  spec.version       = NormalizedTypes::VERSION
   spec.authors       = ["Peter Schilling"]
   spec.email         = ["peter@peterschilling.org"]
 
   spec.summary       = %q{Easily normalize values in Rails}
   spec.description   = %q{Avoid storing blank strings}
-  spec.homepage      = "https://github.com/schpet/normal_types"
+  spec.homepage      = "https://github.com/schpet/normalized_types"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

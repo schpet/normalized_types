@@ -1,3 +1,3 @@
-module NormalTypes
+module NormalizedTypes
   VERSION = "0.1.0"
 end

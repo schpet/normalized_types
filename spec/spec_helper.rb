@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "normal_types"
+require "normalized_types"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

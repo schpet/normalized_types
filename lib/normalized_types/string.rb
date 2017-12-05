@@ -2,7 +2,7 @@ require "active_model/type"
 
 # https://github.com/rails/rails/blob/master/activemodel/lib/active_model/type/string.rb
 
-module NormalTypes
+module NormalizedTypes
   class String < ActiveModel::Type::String
     attr_reader :strip, :presence, :squish, :truncate, :downcase
 
