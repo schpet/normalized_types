@@ -22,7 +22,8 @@ Or install it yourself as:
 
 ```rb
 class User < ActiveRecord::Base
-  attribute :bio, :normalized_string, strip: true
+  attribute :bio, :normalized_string
+  attribute :name, :normalized_string, squish: true
 end
 
 # > User.new(bio: "").bio
@@ -30,7 +31,12 @@ end
 #
 # > User.new(bio: " nice\n").bio
 # => "nice"
+#
+# > User.new(name: "users\n\ncan\npost\nanything!").name
+# => "users can post anything!"
 ```
+
+see options and defaults in [string.rb](./lib/normalized_types/string.rb)
 
 ## Credit
 
