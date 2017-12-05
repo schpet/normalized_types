@@ -32,14 +32,6 @@ end
 # => "nice"
 ```
 
-don't ever want to store a blank, non-stripped string? drop the hammer and
-normalize all strings by default:
-
-```rb
-# config/initializers/normalized_types.rb
-ActiveRecord::Type.register(:string, NormalizedTypes::String, override: true)
-```
-
 ## Credit
 
 This is based on a normalizeable module that [Corey Csuhta](https://github.com/csuhta) showed me.
